@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>GroupServlet</servlet-name>
+        <servlet-class>GroupServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GroupServlet</servlet-name>
+        <url-pattern>/api/group</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MemberServlet</servlet-name>
+        <servlet-class>MemberServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MemberServlet</servlet-name>
+        <url-pattern>/api/member</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ExpenseServlet</servlet-name>
+        <servlet-class>ExpenseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExpenseServlet</servlet-name>
+        <url-pattern>/api/expense</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BalanceServlet</servlet-name>
+        <servlet-class>BalanceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BalanceServlet</servlet-name>
+        <url-pattern>/api/balances</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SettlementServlet</servlet-name>
+        <servlet-class>SettlementServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SettlementServlet</servlet-name>
+        <url-pattern>/api/settlements</url-pattern>
+    </servlet-mapping>
+
+</web-app>
